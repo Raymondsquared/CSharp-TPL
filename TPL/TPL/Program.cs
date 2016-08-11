@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading;
-using System.Threading.Tasks;
 using TPL.TpStrategies.Abstractions;
 using TPL.TpStrategies.Implementations;
 
@@ -14,7 +13,9 @@ namespace TPL
             new TaskStartTpStrategy(),
             new TaskRunTpStrategy(),
             new TaskFactoryTpStrategy(),
-            new TaskTTpStrategy()
+            new TaskTTpStrategy(),
+            new TaskLambdaDelegateIncorrectStrategy(),
+            new TaskLambdaDelegateCorrectStrategy()
         };
         
         public static void Main(string[] args)
@@ -26,6 +27,6 @@ namespace TPL
                 Console.WriteLine($"\nrunning  {tpStrategy.GetName()} : ");
                 tpStrategy.Run();
             }
-        }
+         }
     }
 }

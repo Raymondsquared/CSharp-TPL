@@ -47,7 +47,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TpStrategies\Abstractions\ITpStrategy.cs" />
     <Compile Include="TpStrategies\Implementations\TaskFactoryTpStrategy.cs" />
+    <Compile Include="TpStrategies\Implementations\TaskLambdaDelegateCorrectStrategy.cs" />
     <Compile Include="TpStrategies\Implementations\TaskRunTpStrategy.cs" />
+    <Compile Include="TpStrategies\Implementations\TaskLambdaDelegateIncorrectStrategy.cs" />
     <Compile Include="TpStrategies\Implementations\TaskTTpStrategy.cs" />
     <Compile Include="TpStrategies\Implementations\TaskStartTpStrategy.cs" />
   </ItemGroup>
